@@ -1,4 +1,4 @@
-package com.monitoring.entity;
+package com.rafbur.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -12,11 +12,13 @@ public class Zanieczyszczenia {
 	
 	String nazwa;
 	
-	String dopuszczalnaWartosc;
+	Float dopuszczalnaWartosc;
 	
-	String jednostka;
+	String jednostkaDop;
 	
-	String czasRozpadu;
+	//Float czasRozpadu;
+	
+	//String jednostkaRozp;
 
 	public Integer getIdZanieczyszczenia() {
 		return idZanieczyszczenia;
@@ -34,27 +36,35 @@ public class Zanieczyszczenia {
 		this.nazwa = nazwa;
 	}
 
-	public String getDopuszczalnaWartosc() {
+	public Float getDopuszczalnaWartosc() {
 		return dopuszczalnaWartosc;
 	}
 
-	public void setDopuszczalnaWartosc(String dopuszczalnaWartosc) {
+	public void setDopuszczalnaWartosc(Float dopuszczalnaWartosc) {
 		this.dopuszczalnaWartosc = dopuszczalnaWartosc;
 	}
 
-	public String getJednostka() {
-		return jednostka;
+	public String getJednostkaDop() {
+		return jednostkaDop;
 	}
 
-	public void setJednostka(String jednostka) {
-		this.jednostka = jednostka;
+	public void setJednostkaDop(String jednostkaDop) {
+		this.jednostkaDop = jednostkaDop;
 	}
 
-	public String getCzasRozpadu() {
+	/*public Float getCzasRozpadu() {
 		return czasRozpadu;
 	}
 
-	public void setCzasRozpadu(String czasRozpadu) {
+	public void setCzasRozpadu(Float czasRozpadu) {
 		this.czasRozpadu = czasRozpadu;
 	}
+	public String getJednostkaRozp() {
+		return jednostkaRozp;
+	}
+
+	public void setJednostkaRozp(String jednostkaRozp) {
+		this.jednostkaRozp = jednostkaRozp;
+	}*/
+
 }
