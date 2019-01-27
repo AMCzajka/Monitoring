@@ -1,4 +1,4 @@
-package com.monitoring.entity;
+package com.rafbur.entity;
 
 
 import java.util.List;
